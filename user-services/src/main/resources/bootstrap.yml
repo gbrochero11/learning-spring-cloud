@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: user-services
+  cloud:
+    config:
+      uri: http://localhost:9069
+      username: root
+      password: root
+

@@ -1,0 +1,19 @@
+
+server:
+  port: 9069
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gbrochero11/learning-spring-cloud.git
+          username: ${GITHUB_USER}
+          password: ${GITHUB_PASSWORD}
+          search-paths: config-data
+          default-label: "main"
+  security:
+    user:
+      name: root
+      password: root
+
